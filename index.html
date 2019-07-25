@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chef's Staple -  Cook with the masters</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+    <link href="vendor/videojs/video-js.css" rel="stylesheet">
+    <link href="vendor/videojs/video-skin.css" rel="stylesheet">
+
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><div class="logo-container">Chef's Staple</div></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-6 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">Chef's Staple provides you with video-based culinary training. Learn to cook like a master chef from the comfort of your own kitchen!</h1>
+              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            </div>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <!--<video id="intro-video" title="Intro to Chef's Staple" src="video/intro.mp4" class="img-fluid" controls></video>-->
+            <video id="intro-video" class="video-js vjs-sublime-skin"
+              controls preload="auto" width="528" height="297"
+              data-setup='{"example_option":true}'>
+             <!--<source src="video/720p/intro.mp4" type="video/mp4" />-->
+             <!--MOVED THIS TO HEROKU HOSTED SINCE GITHUB HAS A MAX SIZE OF 100MB-->
+             <source src="http://se-chef-staple.herokuapp.com/video/720p/intro.mp4" type="video/mp4" />
+             <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="download bg-primary text-center" id="download">
+      <div class="container download-content">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">Discover what all the buzz is about!</h2>
+            <p>Our app is currently in beta. Sign up below to receive a download link!</p>
+
+            <form id="signup_form" action="" method="get" role="form" >
+                  <div class="input-group">
+                    <span class="input-group-addon ico-email">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                    <input class="form-control input-email" type="text" id="txt_email" name="" placeholder="your@email.com">
+                    <input type="hidden" name="submit" value="true"/>
+                  </div>
+                  <a href="#download" class="btn btn-outline btn-xl btn-email" onClick="javascript:doFormSubmit('#')">Start Now for Free!</a>
+            </form>
+            <!--
+            <div class="badges">
+              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Learn to be a pro, from the pros</h2>
+          <p class="text-muted">Master the skills and become a Masterchef today!</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/demo-screen-2.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <div id="icon-container"><img src="img/icon1.png"/></div>
+                    <h3>Knife Skills</h3>
+                    <p class="text-muted">Learn how to cut like the pros, essential skills of any Masterchef.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <div id="icon-container"><img src="img/icon4.png"/></div>
+                    <h3>Plating & Design</h3>
+                    <p class="text-muted">Presentation is everything. We teach you the art and science behind plating.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <div id="icon-container"><img src="img/icon3.png"/></div>
+                    <h3>Cooking Techniques</h3>
+                    <p class="text-muted">Master the techniques to creating the perfect dish every time.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <div id="icon-container"><img src="img/icon2.png"/></div>
+                    <h3>Menu Selection</h3>
+                    <p class="text-muted">No Masterchef training would be complete without selecting the right ingredients.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Stop waiting.<br>Start creating.</h2>
+          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+      <div class="container contact-content">
+        <h2>We
+          <i class="fa fa-heart"></i>
+          new friends!</h2>
+        <ul class="list-inline list-social">
+          <li class="list-inline-item social-twitter">
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-facebook">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-google-plus">
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2017 Start Bootstrap. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+    <script src="vendor/videojs/video.js"></script>
+    <script src="vendor/videojs-analytics/videojs-a.js"></script>
+    <script src="js/analytics-libs.js"></script>
+
+    <script type="text/javascript">
+      window.HELP_IMPROVE_VIDEOJS = false;
+    	var videoId = document.getElementById('intro-video')
+      videojs(videoId, {}, function() {
+        this.analytics({
+          session_id:12345,
+        }); // "load the plugin, by defaults tracks everything!!"
+      });
+
+    </script>
+
+  </body>
+
+</html>
